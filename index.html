@@ -1,80 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Author and description -->
+    <meta name="author" content="Brayan Miza" />
+    <meta
+      name="description"
+      content="This is my solution to the Time tracking dashboard challenge on Frontend Mentor."
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Script -->
+    <script defer src="./script.js"></script>
+    <!-- Title -->
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="visually-hidden">Time tracking dashboard</h1>
+      <section class="card report">
+        <div class="report__user-data">
+          <img
+            class="report__user-avatar"
+            src="./images/image-jeremy.png"
+            alt="Avatar of Jeremy Robson"
+          />
+          <div class="report__user-info">
+            <small>Report for</small>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <ul class="report__filters">
+          <li class="report__filter">
+            <button>Daily</button>
+          </li>
+          <li class="report__filter">
+            <button class="filter__active">Weekly</button>
+          </li>
+          <li class="report__filter">
+            <button>Monthly</button>
+          </li>
+        </ul>
+      </section>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+      <ul class="stats">
+        <li class="card stat" data-title="work">
+          <div class="stat__data">
+            <div class="stat__current">
+              <h3><a href="#">Work</a></h3>
+              <p>32hrs</p>
+            </div>
+            <div class="stat__previous">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true" />
+              <small>
+                <span>Last Week</span> -
+                <span>36hrs</span>
+              </small>
+            </div>
+          </div>
+        </li>
+        <li class="card stat" data-title="play">
+          <div class="stat__data">
+            <div class="stat__current">
+              <h3><a href="#">Work</a></h3>
+              <p>32hrs</p>
+            </div>
+            <div class="stat__previous">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true" />
+              <small>
+                <span>Last Week</span> -
+                <span>36hrs</span>
+              </small>
+            </div>
+          </div>
+        </li>
+        <li class="card stat" data-title="study">
+          <div class="stat__data">
+            <div class="stat__current">
+              <h3><a href="#">Work</a></h3>
+              <p>32hrs</p>
+            </div>
+            <div class="stat__previous">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true" />
+              <small>
+                <span>Last Week</span> -
+                <span>36hrs</span>
+              </small>
+            </div>
+          </div>
+        </li>
+        <li class="card stat" data-title="exercise">
+          <div class="stat__data">
+            <div class="stat__current">
+              <h3><a href="#">Work</a></h3>
+              <p>32hrs</p>
+            </div>
+            <div class="stat__previous">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true" />
+              <small>
+                <span>Last Week</span> -
+                <span>36hrs</span>
+              </small>
+            </div>
+          </div>
+        </li>
+        <li class="card stat" data-title="social">
+          <div class="stat__data">
+            <div class="stat__current">
+              <h3><a href="#">Work</a></h3>
+              <p>32hrs</p>
+            </div>
+            <div class="stat__previous">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true" />
+              <small>
+                <span>Last Week</span> -
+                <span>36hrs</span>
+              </small>
+            </div>
+          </div>
+        </li>
+        <li class="card stat" data-title="self-care">
+          <div class="stat__data">
+            <div class="stat__current">
+              <h3><a href="#">Work</a></h3>
+              <p>32hrs</p>
+            </div>
+            <div class="stat__previous">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true" />
+              <small>
+                <span>Last Week</span> -
+                <span>36hrs</span>
+              </small>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://www.frontendmentor.io/profile/bramizdev">@bramizdev</a>.
+    </footer>
+  </body>
 </html>
