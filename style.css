@@ -107,10 +107,6 @@ ul {
   border-width: 0;
 }
 
-.hidden {
-  display: none;
-}
-
 .card {
   --br-card: 1rem;
 
@@ -122,14 +118,14 @@ body {
   background-color: var(--clr-neutral-900);
   font-family: var(--ff-base);
   color: var(--clr-neutral-100);
-  padding: 5rem 24px;
+  padding: 5rem 1.5rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 416px;
+  max-width: 26rem;
   margin: 0 auto;
 }
 
@@ -148,7 +144,7 @@ footer a:is(:hover, :focus-visible) {
   color: var(--clr-neutral-500);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
     padding: 1rem;
     display: grid;
@@ -184,8 +180,8 @@ footer a:is(:hover, :focus-visible) {
 }
 
 .report__user-avatar {
-  height: 70px;
-  width: 70px;
+  height: 4.375rem;
+  width: 4.375rem;
   border: 3px solid var(--clr-neutral-100);
   border-radius: 50%;
 }
@@ -193,18 +189,18 @@ footer a:is(:hover, :focus-visible) {
 .report__user-info small {
   color: var(--clr-neutral-200);
   font-weight: var(--fw-400);
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .report__user-info h2 {
   font-weight: var(--fw-300);
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .report {
-    max-width: 254px;
+    max-width: 15.875rem;
   }
 
   .report__user-data {
@@ -214,10 +210,8 @@ footer a:is(:hover, :focus-visible) {
   }
   /* ---- */
   .report__user-avatar {
-    height: 82px;
-    width: 82px;
-    border: 3px solid var(--clr-neutral-100);
-    border-radius: 50%;
+    height: 5.125rem;
+    width: 5.125rem;
   }
 
   .report__user-info {
@@ -225,7 +219,7 @@ footer a:is(:hover, :focus-visible) {
   }
 
   .report__user-info h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
@@ -240,7 +234,7 @@ footer a:is(:hover, :focus-visible) {
   all: unset;
   color: var(--clr-neutral-500);
   font-weight: var(--fw-300);
-  font-size: 18px;
+  font-size: 1.125rem;
   cursor: pointer;
   transition: color 0.2s ease;
 }
@@ -254,7 +248,7 @@ footer a:is(:hover, :focus-visible) {
   font-weight: var(--fw-400);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .report__filters {
     padding: 1.5rem 2rem;
     flex-direction: column;
@@ -268,21 +262,23 @@ footer a:is(:hover, :focus-visible) {
   gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .stats {
     width: 100%;
-    grid-template-columns: minmax(188px, 254px) minmax(188px, 254px);
+    grid-template-columns:
+      minmax(11.75rem, 15.875rem)
+      minmax(11.75rem, 15.875rem);
     gap: 2rem;
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 67.5rem) {
   .stats {
     width: 100%;
-    grid-template-columns: minmax(188px, 254px) minmax(188px, 254px) minmax(
-        188px,
-        254px
-      );
+    grid-template-columns:
+      minmax(11.75rem, 15.875rem)
+      minmax(11.75rem, 15.875rem)
+      minmax(11.75rem, 15.875rem);
     gap: 2rem;
   }
 }
@@ -298,8 +294,8 @@ footer a:is(:hover, :focus-visible) {
 .stat::before {
   content: '';
   position: absolute;
-  height: 79px;
-  width: 79px;
+  height: 4.9375rem;
+  width: 4.9375rem;
   background-repeat: no-repeat;
   background-size: contain;
   right: 1rem;
@@ -360,7 +356,7 @@ footer a:is(:hover, :focus-visible) {
   background-color: var(--clr-neutral-800);
   border-top-left-radius: var(--br-card);
   border-top-right-radius: var(--br-card);
-  padding: 1.35rem 24px;
+  padding: 1.35rem 1.5rem;
   padding-bottom: 1.5rem;
 }
 
@@ -373,7 +369,7 @@ footer a:is(:hover, :focus-visible) {
 .stat__heading h3 a {
   text-decoration: none;
   color: var(--clr-neutral-100);
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: var(--fw-500);
 }
 
@@ -395,36 +391,35 @@ footer a:is(:hover, :focus-visible) {
 }
 
 .stat__info p {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: var(--fw-300);
 }
 
 .stat__info small {
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: var(--clr-neutral-200);
   font-weight: var(--fw-400);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .stat__info {
     flex-direction: column;
     align-items: start;
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 67.5rem) {
   .stat {
     padding-top: 2.8rem;
   }
 
   .stat__data {
-    padding: 1.6rem 24px;
+    padding: 1.6rem 1.5rem;
     padding-bottom: 1.8rem;
-    width: 100%;
   }
 
   .stat__heading h3 a {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .stat__info {
@@ -432,7 +427,7 @@ footer a:is(:hover, :focus-visible) {
   }
 
   .stat__info p {
-    font-size: 56px;
+    font-size: 3.5rem;
     line-height: 1.4;
   }
 }
